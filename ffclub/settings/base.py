@@ -603,6 +603,10 @@ MINIFY_BUNDLES = {
         'demo':{
             'css/event/demo.less',
             'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css'
+        },
+        'yaml':{
+            'css/event/yaml/core/base.min.css',
+            'css/event/yaml/forms/gray-theme.css',        
         }
     },
     'js': {

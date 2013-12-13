@@ -36,4 +36,5 @@ urlpatterns = patterns(
     url(r'^events/microfilm-vote/$', views.microfilm_vote, name='event.microfilm'),
     url(r'^events/microfilm-vote/video/(?P<video_id>[1-4])/$', views.microfilm_vote_video,
         name='event.microfilm.vote.video'),
+    url(r'^events/fxca-tumblr/$', views.fxca_tumblr, name='event.fxca.tumblr'),
 )

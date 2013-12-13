@@ -487,3 +487,5 @@ def campaign_claim_award(request, campaign_slug):
                         initData['gender'] = genderMap[me['gender']]
             data['form'] = AwardClaimForm(initial=initData)
     return render(request, 'event/campaign_claim_award.html', data)
+def fxca_tumblr(request):
+    return render(request, 'event/fxca-tumblr/index.html')
