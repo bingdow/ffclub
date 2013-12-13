@@ -1,0 +1,55 @@
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Fxca-Tumblr-Post</title>
+  <link rel="stylesheet" href="./yaml/core/base.min.css" type="text/css"/>
+  <link rel="stylesheet" href="./yaml/forms/gray-theme.css" type="text/css"/>
+</head>
+<body>
+	<form class="ym-form">
+	    <div class="ym-fbox">
+	    	<p>Fxca Tumblr. Post</p>
+	    </div>
+        <div class="ym-fbox">
+	    	<label for="tumblr-title">Tumblr. Title</label>
+	    	<input type="text" name="tumblr-title" id="tumblr-title" placeholder="title" />
+	    	<label for="tumblr-body">Tumblr. Body(HTML allowed)</label>
+	    	<textarea name="tumblr-body" id="tumblr-body" rows="5" required="true"></textarea>
+	    	<label for="tumblr-tags">Tumblr. Tags</label>
+	    	<input type="text" name="tumblr-tags" id="tumblr-tags" placeholder="tags, comma seperated." />
+	    </div>
+	    <div class="ym-fbox-footer">
+    	    <div class="ym-fbox-footer">
+		    	<input type="submit" class="ym-button ym-primary" value="submit" id="submit"/>
+		    	<input type="reset" class="ym-button ym-warning" value="reset" id="reset"/>
+		    </div>
+	    </div>
+    </form>
+</body>
+</html> -->
+{% block base_css %}
+	{{ css('yaml') }}
+{% endblock %}
+
+{% block content %}
+	<form class="ym-form">
+	    <div class="ym-fbox">
+	    	<p>Fxca Tumblr. Post</p>
+	    </div>
+        <div class="ym-fbox">
+	    	<label for="tumblr-title">Tumblr. Title</label>
+	    	<input type="text" name="tumblr-title" id="tumblr-title" placeholder="title" />
+	    	<label for="tumblr-body">Tumblr. Body(HTML allowed)</label>
+	    	<textarea name="tumblr-body" id="tumblr-body" rows="5" required="true"></textarea>
+	    	<label for="tumblr-tags">Tumblr. Tags</label>
+	    	<input type="text" name="tumblr-tags" id="tumblr-tags" placeholder="tags, comma seperated." />
+	    </div>
+	    <div class="ym-fbox-footer">
+    	    <div class="ym-fbox-footer">
+		    	<input type="submit" class="ym-button ym-primary" value="submit" id="submit"/>
+		    	<input type="reset" class="ym-button ym-warning" value="reset" id="reset"/>
+		    </div>
+	    </div>
+    </form>
+{% endblock %}

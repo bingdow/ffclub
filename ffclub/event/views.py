@@ -488,4 +488,11 @@ def campaign_claim_award(request, campaign_slug):
             data['form'] = AwardClaimForm(initial=initData)
     return render(request, 'event/campaign_claim_award.html', data)
 def fxca_tumblr(request):
+    import pytumblr
+    client = pytumblr.TumblrRestClient(
+        'krwvgS3IKSfErheQEJ4Tpn2oPzsi86Xwi0hOgtO5dgzMWLNM4a',
+        'ID3cK6wZ0dhWFyxnV6lZEjMGPUZWhxFde2YTUvAkrRytKy4CeJ',
+        'p1We09fW2niIm8BXW7xvVLSlCUZnzL8e6VzWfJ10UFR3v3LwR0',
+        'IYyA1JQbXnu1EFRdorkNk6hJQm0p3xVct2xMDNqO8cRnN8Ciy2',
+    )
     return render(request, 'event/fxca-tumblr/index.html')
